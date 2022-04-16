@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue"
 
-defineProps<{ msg: string }>();
+defineProps<{ msg: string }>()
 
-const count = ref(0);
+const count = ref(0)
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">{{ msg }}</h1>
+  <h1 class="text-gray-200 bg">{{ msg }}</h1>
 
   <p>
     Recommended IDE setup:
