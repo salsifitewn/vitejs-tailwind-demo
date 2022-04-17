@@ -28,11 +28,11 @@ const { state, toggle } = useToggle(true)
           transition-colors
           ease-in-out
           duration-200
-          focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+          focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500
         "
         role="switch"
         aria-checked="false"
-        :class="{ 'bg-indigo-600': state, 'bg-gray-200': !state }"
+        :class="{ 'bg-blue-600': state, 'bg-gray-200': !state }"
       >
         <span class="sr-only">Use setting</span>
         <span
@@ -74,11 +74,11 @@ const { state, toggle } = useToggle(true)
       transition-colors
       ease-in-out
       duration-200
-      focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+      focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500
     "
     role="switch"
     aria-checked="false"
-    :class="{ 'bg-indigo-600': state, 'bg-gray-200': !state }"
+    :class="{ 'bg-green-600': state, 'bg-gray-200': !state }"
   >
     <span class="sr-only">Use setting</span>
     <span

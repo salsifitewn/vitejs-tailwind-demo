@@ -1,17 +1,16 @@
-<script>
-export default {
-  props: { initialState: { type: Boolean, default: false } },
-  data() {
-    return { state: this.initialState }
+<script setup lang="ts">
+import { ref } from "vue"
+const props = defineProps({
+  initialState: {
+    type: Boolean,
+    default: false,
   },
-  methods: {
-    toggle() {
-      this.state = !this.state
-    },
-  },
+})
+const state = ref(props.initialState)
+const toggle = () => {
+  state.value = !state.value
 }
 </script>
 <template>
   <slot :state="state" :toggle="toggle" />
 </template>
-s
